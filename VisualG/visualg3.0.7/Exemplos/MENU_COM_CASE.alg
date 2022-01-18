@@ -45,7 +45,7 @@ FLAG <- X
 ENQUANTO FLAG FAÇA
    X := VERDADEIRO
    MUDACOR("Amarelo","FRENTE")
-//   MUDACOR("Azul","FUNDOS")
+   MUDACOR("Vermelho","FUNDOS")
    limpatela
    Escreval("*** Menu ***")
    Escreval("1 - Inclusão")

@@ -1,0 +1,166 @@
+Algoritmo "LOTOFACIL"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  David Tosta
+// Descrição   : Algoritmo para realização de jogos de loteria
+// Autor(a)    : Rafael Evangelista Carneiro
+// Data atual  : 17/01/2022
+Var
+   // Seção de Declarações das variáveis
+
+   jogo: vetor [1..20] de inteiro
+   numdezenas, qtdjogos, aux, a, b, c, d, f, i, z: inteiro
+   igual, n: caracter
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+
+   Escreval("::::::::::::::::::::::::::::::::::::::::::::")
+   Escreval("                 LOTOFÁCIL                  ")
+   Escreval("::::::::::::::::::::::::::::::::::::::::::::")
+
+   Escreval
+
+   Escreva("Qual a quantidade de jogos deseja fazer: ")
+   Leia (qtdjogos)
+
+   Escreva("Quantos números deseja jogar (entre 15 e 20): ")
+   Leia (numdezenas)
+
+   Escreval
+
+   Para a de 1 até qtdjogos Faça
+
+      i:=1
+      Enquanto i <= numdezenas Faça
+
+         Escreva ("Digite o ", i, "o. número (entre 1 e 25): ")
+
+         aleatório 0,25
+
+         Leia (z)
+
+         LimpaTela
+
+         Se i <> 1 Então
+
+            Para a de i até 1 passo -1 Faça
+
+               Se (z = jogo[a]) então
+
+                  Para a de i até 1 passo -1 Faça
+
+                     Se (z = jogo[a]) então
+
+                        Para a de i até 1 passo -1 Faça
+
+                           Se (z = jogo[a]) então
+
+                              Para a de i até 1 passo -1 Faça
+
+                                 Se (z = jogo[a]) então
+
+                                    Para a de i até 1 passo -1 Faça
+
+                                       Se (z = jogo[a]) então
+
+                                          Para a de i até 1 passo -1 Faça
+
+                                             Se (z = jogo[a]) então
+
+                                                z <- 50
+
+                                             FimSe
+
+                                          FimPara
+
+                                       FimSe
+
+                                    FimPara
+
+                                 FimSe
+
+                              FimPara
+
+                           FimSe
+
+                        FimPara
+
+                     FimSe
+
+                  FimPara
+
+               FimSe
+
+            FimPara
+
+         FimSe
+
+         jogo[i]:= z
+
+         LimpaTela
+
+         i:= i + 1
+
+      FimEnquanto
+
+   FimPara
+
+
+
+   Para b de 1 até (numdezenas -1) Faça
+
+      Para c de (b+1) até numdezenas Faça
+
+         Se jogo[b] > jogo [c] então
+
+            aux:= jogo [c]
+            jogo[c]:= jogo [b]
+            jogo [b]:= aux
+
+         FimSe
+
+      FimPara
+
+   FimPara
+
+   LimpaTela
+
+   Escreval("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::")
+   Escreval("                          LOTOFÁCIL                             ")
+   Escreval("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::")
+
+   Escreval
+
+   Escreval ("Você optou por fazer ", qtdjogos, " jogos de ", numdezenas, " dezenas.")
+
+   Escreval
+
+   a:=1
+   b:=1
+
+   Repita
+
+      Escreval
+
+      Escreval ("Os números escolhidos para o jogo ", b, " foram: ")
+
+      Para b de 1 até numdezenas Faça
+
+         Escreva ("[",jogo[b] , "], ")
+
+      FimPara
+
+      Escreval
+
+      a:= a + 1
+      b:= a
+
+   Até a > qtdjogos
+
+   Escreval
+
+   Escreval ("* Observação: ainda existe a possibilidade de existirem números repetidos no jogo.  Eles são representados pelo número 50.")
+
+   Escreval
+
+Fimalgoritmo

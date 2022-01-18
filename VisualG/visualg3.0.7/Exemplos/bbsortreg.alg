@@ -23,10 +23,11 @@ inicio
    // aleatorio on e aleatorio off abaixo
    aleatorio on
    para i de 1 ate MAX_ITENS faca
-      escreva("Digite o codigo do ",i,"o registro:")
+      escreva("Digite o codigo do ",i,"o. registro:  ")
       leia(dados[i].codigo)
-      escreva("Digite o nome do ",i,"o registro:")
+      escreva("Digite o nome do ",i,"o. registro:  ")
       leia(dados[i].nome)
+      escreval
    fimpara
    aleatorio off
 fimprocedimento
@@ -75,7 +76,9 @@ procedimento imprime
 var a: inteiro
 inicio
    // Impressão dos dados ordenados
+   escreval
    escreval("Item - Codigo Nome")
+   escreval
    para a de 1 ate MAX_ITENS faca
       escreval(a:4," - ", dados[a].codigo : 6, " ", dados[a].nome)
    fimpara
@@ -84,8 +87,14 @@ fimprocedimento
 inicio
    leituradosdados
    ordenapornome
+   escreval
+   escreval
+   escreval ("Exibição Ordenada por Nome")
    imprime
    ordenaporcodigo
+   escreval
+   escreval
+   escreval ("Exibição Ordenada por Código")
    imprime
 fimalgoritmo
 

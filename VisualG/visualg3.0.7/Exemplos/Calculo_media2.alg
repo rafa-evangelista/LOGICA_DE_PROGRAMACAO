@@ -1,13 +1,11 @@
-Agoritmo "Calculo_Media2"
+Algoritmo "Calculo_Media2"
 // Disciplina: [Linguagem e Lógica de programaçao] 
-// Função : calculo da média aritimética verificando o resultado for maior ou igual a 7; 
-                   se Sim mostre o aluno xxxx passou
-                   se Não mostre o aluno xxxx reprovou 
+// Função : calculo da média aritimética verificando o resultado for maior ou igual a 7;
 // Autor : Professor Antonio
 // Data : 05/04/2015
 // Seção de Declarações
 var
-    Nota1, Nota2, Nota3, Nota4, Nota5, Media: Real
+    Nota1, Nota2, Nota3, Nota4, Media: Real
     Aluno : Caracter
 Inicio
 // Seção de Comandos
@@ -22,12 +20,13 @@ Escreva ("Digite a Primeira nota: ")
     Leia (Nota3)
 Escreva ("Digite a Quarta nota: ")
     Leia (Nota4)
-Media <- (Nota1+ Nota2+ Nota3+ Nota4+ Nota5) / 5
-    Escreva ("A Média eh: ", Media)
+Media <- (Nota1+ Nota2+ Nota3+ Nota4) / 4
+    Escreva ("A Média é: ", Media)
 Se Media >=7 entao
      Escreva(" O Aluno ",Aluno, "Passou")
-Senao
+Senão
      Escreva(" O Aluno ",Aluno, "Reprovou")
 fimse
+
 Fimalgoritmo
 

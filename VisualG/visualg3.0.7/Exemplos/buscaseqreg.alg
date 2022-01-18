@@ -19,10 +19,12 @@ procedimento preenchevetor
 // Preenche o vetor com numeros aleatorios entre 0 e 100
 var j : inteiro
 inicio
+
+   escreval("   Num           Cód             Salário")
 para j de 1 ate 10 faca
    dados[j].codigo <- randi(100) // cria codigos aleartorios
-   dados[j].salario <- int(rand * 100000)/100 // cria salarios aleatorios
-   escreval(j:5,dados[j].codigo:5,dados[j].salario:10:2)
+   dados[j].salario <- int(rand * 100000)/10 // cria salarios aleatorios
+   escreval(j:5,dados[j].codigo:15,dados[j].salario:20:2)
 fimpara
 fimprocedimento
 
@@ -30,9 +32,16 @@ inicio
 
 preenchevetor
 
-escreva("Entre com o valor de busca (ESC termina) :")
+escreval
+escreval
+
+escreval("Entre com o código do funcionário que deseja buscar")
+escreva ("Pressione ESC para terminar: ")
 
 leia(vb)
+
+escreval
+escreval
 
 // Busca Seqüencial
 j <- 1
@@ -45,8 +54,11 @@ repita
 ate (achou=verdadeiro) ou (j>10)
 
 se achou entao
-   escreval("Achei o funcionario ", vb , " na posição ", j, " o salario é : ", dados[j].salario:10:2)
+   escreval("Achei o funcionario ", vb , " na posição ", j, " e o salario é: R$ ", dados[j].salario: 2:2)
 senao
-   escreval("Nao achei.")
+   escreval("Nao achei o funcionário.")
 fimse
+
+escreval
+
 fimalgoritmo
