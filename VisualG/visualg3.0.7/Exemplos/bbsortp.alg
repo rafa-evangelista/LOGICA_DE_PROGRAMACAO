@@ -26,7 +26,7 @@ fimprocedimento
 inicio
 // Leitura dos dados
 // Gerar numeros aleatorios entre 0 e 100, com 3 casas decimais
-aleatorio 0,100,3
+aleatorio 0,100,2
 para a de 1 ate 10 faca
    leia(x[a])
 fimpara
