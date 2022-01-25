@@ -19,7 +19,7 @@ LimpaTela
 
 cond:= 0
 
-Enquanto cond = 0 faça
+Enquanto cond < 10 faça
         Escreva ("Digite um número para comparar o valor: ")
         Leia (num_2)
         Escreval
@@ -41,6 +41,7 @@ Enquanto cond = 0 faça
            cond:= 1
            Escreval
         FimSe
+        cond:=cond+1
 FimEnquanto
 
 Fimalgoritmo

@@ -22,7 +22,7 @@ Inicio
    b:= -1
    c:= 1
 
-   Para a de 1 até 13 faça
+   Para a de 1 até 25 faça
             d:= b + c
             b:= c
             c:= d

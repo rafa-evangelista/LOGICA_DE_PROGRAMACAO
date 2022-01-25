@@ -5,32 +5,29 @@ Algoritmo "Senha"
 // Autor(a)    : Rafael Evangelista Carneiro
 // Data atual  : 21/12/2021
 Var
-// Seção de Declarações das variáveis
+   // Seção de Declarações das variáveis
 
-a, b, r, senha: inteiro
-aceita: caractere
+   a, b, senha, aceita: inteiro
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc...
+   // Seção de Comandos, procedimento, funções, operadores, etc...
 
-Escreval
+   Escreval
 
-Escreval(".............................")
-Escreval("Programa de Acesso ao Sistema")
-Escreval(".............................")
+   Escreval(".............................")
+   Escreval("Programa de Acesso ao Sistema")
+   Escreval(".............................")
 
-Escreval
+   Escreval
 
-Escreval("Ao usar o sistema, você terá 3 chances de digitar a senha correta.")
-Escreval("Caso contrário o sistema será bloqueado")
-Escreva("Concorda com os termos ('S' ou 'N'): ")
-Leia (aceita)
+   Escreval("Ao usar o sistema, você terá 3 chances de digitar a senha correta.")
+   Escreval("Caso contrário o sistema será bloqueado")
+   Escreva("Concorda com os termos? Digite [1] para Sim ou [2] para Não: ")
+   Leia (aceita)
 
-r:=0
+   LimpaTela
 
-LimpaTela
-
-Se aceita = "S" então
+   Se aceita = 1 então
 
       Escreval(".................")
       Escreval("Acesso ao Sistema")
@@ -46,18 +43,19 @@ Se aceita = "S" então
       a:=1
 
       Enquanto a <=3 faça
-      
-      Escreval(".................")
-      Escreval("Acesso ao Sistema")
-      Escreval(".................")
 
-      Escreva("Digite a senha: ")
+         Escreval(".................")
+         Escreval("Acesso ao Sistema")
+         Escreval(".................")
 
-      leia (b)
+         Escreva("Digite a senha: ")
 
-      LimpaTela
+         leia (b)
+
+         LimpaTela
 
          Escolha b
+
          Caso = senha
             Escreval ("Seja Bem Vindo ao Sistema!!!")
             Escreval
@@ -73,17 +71,15 @@ Se aceita = "S" então
             Fimse
 
          FimEscolha
-         
+
          a:=a+1
 
       FimEnquanto
 
-      r:=1
+   FimSe
 
-Fimse
-
-Se r=0 então
-       Escreval ("Você não aceitou os termos do Programa!")
-Fimse
+   Se aceita = 2 Então
+      Escreval ("Você não aceitou os termos do Programa!")
+   Fimse
 
 Fimalgoritmo

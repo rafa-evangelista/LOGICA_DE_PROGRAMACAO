@@ -7,7 +7,7 @@ Algoritmo "Quantos Números Primos (v2)"
 Var
    // Seção de Declarações das variáveis
 
-   primo: vetor[1..100] de inteiro
+   primo: vetor[1..1000] de inteiro
    num1, num2, cont, cont2, divisor, a: inteiro
 
 

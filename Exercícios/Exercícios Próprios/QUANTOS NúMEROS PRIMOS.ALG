@@ -58,15 +58,3 @@ Inicio
    FimEnquanto
 
 Fimalgoritmo
-
-
-
-      //Para a:=1 até cont2 Faça
-         //Escreva("[",(primo[a]),"], ")
-      //FimPara
-
-      //cont2:=cont2+1
-
-      //(primo[a]):= num1
-
-      //a:= a + 1
