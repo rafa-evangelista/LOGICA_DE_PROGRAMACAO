@@ -4,21 +4,32 @@ Algoritmo "Multiplicação de Vetores"
 // Descrição   : Algoritmo para Multiplicar Vetores
 // Autor(a)    : Rafael Evangelista Carneiro
 // Data atual  : 26/01/2022
+
 Var
 // Seção de Declarações das variáveis
 
+a, resultado: inteiro
+vet: vetor [1..5] de inteiro
 
 
-Função produtovetor (vet[1..5]: inteiro):inteiro
+
+Função produtovetor (vet1 [1..5]: real): real
+var c: inteiro
 
 Inicio
-Para b de 1 até 4 Faça
-     c:= vet[b] * vet[b+1]
+
+c:=1
+
+Para b de 1 até 5 Faça
+     c:= c * vet1[b]
 FimPara
+
+retorne c
 
 FimFuncao
 
 Inicio
+
 // Seção de Comandos, procedimento, funções, operadores, etc...
 
 Escreval ("...................................................")
@@ -38,6 +49,6 @@ Escreval
 
 resultado:= produtovetor (vet[1..5])
 
-Escreval ("O resultado da multiplicação dos termos do vetor é:  ", produtovetor(c), ".")
+Escreval ("O resultado da multiplicação dos termos do vetor é:  ", c, ".")
 
 Fimalgoritmo
